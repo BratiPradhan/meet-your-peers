@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+:root {
+  --primary-color: #f43f5e;
+  --off-white: #f1f5f9;
+  --dark-gray: #6b7280;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.container .header {
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+  color: var(--dark-gray);
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.container .button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+}
+
+.button {
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.button-primary {
+  background-color: black;
+  color: whitesmoke;
+}
+
+.button-secondary {
+  background-color: whitesmoke;
+  color: var(--dark-gray);
+}
+
+.card {
+  display: flex;
+  padding: 0.6rem;
+  margin: 1rem;
+  height: 140px;
+  background-color: var(--off-white);
+}
+
+.card-item-left {
+  width: 280px;
+  margin-right: 4rem;
+}
+.card-item-left .name {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.card-item-left .job {
+  color: var(--dark-gray);
+  font-weight: bold;
+}
+
+.card-item-right {
+  width: 350px;
+}
+
+.card-item-right .contact-header {
+  font-weight: bold;
+}
+
+.card-item-right .contact-item {
+  display: flex;
+  justify-content: space-between;
+  color: var(--dark-gray);
+}
+
+@media only screen and (max-width: 700px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+  }
+
+  .card-item-left {
+    margin-bottom: 1rem;
+  }
+  .card-item-right {
+    width: 340px;
+  }
+}
